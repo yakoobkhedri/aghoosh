@@ -17,3 +17,11 @@ closeCancelRequest2.addEventListener('click', function () {
   cancelRequest.classList.remove('active');
   cancelRequest.querySelector('#box').classList.remove('active');
 });
+
+cancelRequest.addEventListener('click', function(e) {
+  // اگر عنصر کلیک شده خود cancelRequest باشد (و نه فرزندانش)
+  if (e.target === cancelRequest) {
+    cancelRequest.classList.remove('active');
+    cancelRequest.querySelector('#box').classList.remove('active');
+  }
+});

@@ -9,90 +9,108 @@
   font-weight: 100;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Thin.woff') format("woff");
 }
+
 @font-face {
   font-family: IranYekanFaNum-Light;
   font-weight: 300;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Light.woff') format("woff");
 }
+
 @font-face {
   font-family: IranYekanFaNum-Regular;
   font-weight: 400;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Regular.woff') format("woff");
 }
+
 @font-face {
   font-family: IranYekanFaNum-Medium;
   font-weight: 500;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Medium.woff') format("woff");
 }
+
 @font-face {
   font-family: IranYekanFaNum-SemiBold;
   font-weight: 600;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-DemiBold.woff') format("woff");
 }
+
 @font-face {
   font-family: IranYekanFaNum-Bold;
   font-weight: 700;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Bold.woff') format("woff");
 }
+
 @font-face {
   font-family: IranYekanFaNum-ExtraBold;
   font-weight: 800;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-ExtraBold.woff') format("woff");
 }
+
 @font-face {
   font-family: IranYekanFaNum-Black;
   font-weight: 900;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-Black.woff') format("woff");
 }
+
 @font-face {
   font-family: IranYekanFaNum-ExtraBlack;
   font-weight: 950;
   src: url('../src/fonts/IRANYekanX(Pro)/IRANYekanXFaNum-ExtraBlack.woff') format("woff");
 }
+
 /*  */
 
-.font-normal{
+.font-normal {
   font-weight: 400;
   @apply rtl:font-iranYekanRegular;
 }
-.font-medium{
+
+.font-medium {
   font-weight: 500;
   @apply rtl:font-iranYekanMedium;
 }
-.font-semibold{
+
+.font-semibold {
   font-weight: 600;
   @apply rtl:font-iranYekanSemiBold;
 }
-.font-bold{
+
+.font-bold {
   font-weight: 700;
   @apply rtl:font-iranYekanBold;
 }
-.font-extrabold{
+
+.font-extrabold {
   font-weight: 800;
   @apply rtl:font-iranYekanExtraBold;
 }
-.font-black{
+
+.font-black {
   font-weight: 900;
   @apply rtl:font-iranYekanBlack;
 }
-.font-extrablack{
+
+.font-extrablack {
   font-weight: 950;
   @apply rtl:font-iranYekanExtraBlack;
 }
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: IranYekanFaNum-Regular!important;
+  font-family: IranYekanFaNum-Regular !important;
   user-select: none;
   overflow-x: hidden;
 }
+
 /* global styles */
 a {
   cursor: pointer;
   transition: all .4s
 }
+
 .flex-center {
   @apply flex items-center justify-center;
 }
@@ -104,108 +122,282 @@ a {
 .transition {
   @apply transition-all duration-300;
 }
+
 /* number input */
 input[type="number"] {
-  -moz-appearance: textfield; /* برای فایرفاکس */
-  appearance: textfield; /* برای مرورگرهای مدرن */
+  -moz-appearance: textfield;
+  /* برای فایرفاکس */
+  appearance: textfield;
+  /* برای مرورگرهای مدرن */
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-  -webkit-appearance: none; /* برای کروم و سافاری */
-  margin: 0; /* حذف margin پیش‌فرض */
+  -webkit-appearance: none;
+  /* برای کروم و سافاری */
+  margin: 0;
+  /* حذف margin پیش‌فرض */
 }
+
 /* scroll */
 .noscroll {
-  scrollbar-width: none; /* برای Firefox */
-  -ms-overflow-style: none; /* برای IE و Edge */
+  scrollbar-width: none;
+  /* برای Firefox */
+  -ms-overflow-style: none;
+  /* برای IE و Edge */
 }
 
 .noscroll::-webkit-scrollbar {
-  display: none; /* برای Chrome, Safari و Opera */
+  display: none;
+  /* برای Chrome, Safari و Opera */
 }
+
 /* shadow */
-.shadow-1{
+.shadow-1 {
   box-shadow: 0px 8px 100px 0px #000000;
 }
-.shadow-2{
+
+.shadow-2 {
   box-shadow: 0px 0px 5.3px -2px #00000040;
 }
-.shadow-3{
+
+.shadow-3 {
   box-shadow: 0px 7px 8.5px -7px #C48191;
 }
+
 /* profile */
-#profile,#wallet,#message,#requestHistory{
+#profile,
+#wallet,
+#message,
+#requestHistory {
   opacity: 0;
   visibility: hidden;
   top: 40px;
 }
-#cancelRequest,#cancelRequest > div,#pay,#pay > div,#searching,#searchingFail{
+
+#cancelRequest,
+#cancelRequest>div,
+#pay,
+#pay>div,
+#searching,
+#searchingFail {
   opacity: 0;
   visibility: hidden;
   transition: all .4s;
 }
-#cancelRequest > div,#pay > div{
+
+#cancelRequest>div,
+#pay>div {
   margin-top: -50px;
   transition: all .8s;
 }
-#searching > div,#searchingFail > div{
+
+#searching>div,
+#searchingFail>div {
   bottom: -50px;
   transition: all .8s;
   position: relative;
 }
-#searching.active > div,#searchingFail.active > div{
+
+#searching.active>div,
+#searchingFail.active>div {
   bottom: 0px;
-   opacity: 100%;
-  visibility: visible;
-}
-#cancelRequest > div.active,#pay > div.active{
-  margin-top: 0;
-    opacity: 100%;
-  visibility: visible;
-}
-#cancelRequest.active,#pay.active,#searching.active,#searchingFail.active{
   opacity: 100%;
   visibility: visible;
 }
-#profile.active,#wallet.active,#message.active,#requestHistory.active{
+
+#cancelRequest>div.active,
+#pay>div.active {
+  margin-top: 0;
+  opacity: 100%;
+  visibility: visible;
+}
+
+#cancelRequest.active,
+#pay.active,
+#searching.active,
+#searchingFail.active {
+  opacity: 100%;
+  visibility: visible;
+}
+
+#profile.active,
+#wallet.active,
+#message.active,
+#requestHistory.active {
   top: 0;
   opacity: 100%;
   visibility: visible;
 }
-#profileList a,#profile,#wallet,#message,#messageList>a,#requestHistory,#cancelRequest,#pay{
+
+#profileList a,
+#profile,
+#wallet,
+#message,
+#messageList>a,
+#requestHistory,
+#cancelRequest,
+#pay {
   transition: all .4s;
 }
-#messageList > a:hover,#messageList > a.active{
+
+.condition-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../src/img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: left 0.5rem center;
+  background-size: 1.5rem;
+  padding-right: 12px;
+}
+
+/* استایل جدید برای مخفی کردن محتوای dropdown در ابتدا */
+.dropdownContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  opacity: 0;
+}
+
+.dropdownContent.show {
+  max-height: 2000px;
+  /* مقداری بیشتر از حداکثر ارتفاع ممکن */
+  opacity: 1;
+  transition: max-height 0.5s ease-in, opacity 0.3s ease 0.1s;
+}
+
+.dropdownBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.dropdownBtn.active svg {
+  transform: rotate(180deg);
+}
+
+/* استایل جدید برای چک‌باکس‌ها */
+.checkbox input[type="checkbox"] {
+  flex-shrink: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #189FF2;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: #189FF2;
+  border-color: #189FF2;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 2px rgba(24, 159, 242, 0.3);
+}
+/* chat */
+ .voice-icon, .send-icon {
+    transition: all 0.3s ease;
+    pointer-events: auto;
+  }
+  
+  .send-icon {
+    position: absolute;
+    right: 14px;
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  
+  .voice-icon {
+    position: relative;
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .has-text .voice-icon {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  
+  .has-text .send-icon {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .message-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+/* inputbox */
+.inputbox{
+  transition: all .4s;
+}
+.inputbox.active{
+  border-top: 1.5px solid #189FF2;
+  box-shadow: 0 0 0 4px #189FF21C;
+}
+/*  */
+#messageList>a:hover,
+#messageList>a.active {
   border: 1px solid #FFECF1;
   box-shadow: 0px 7px 8.5px -7px #C48191;
 }
-#profileList >a:hover,#profileList >a.active,#profileList >div:hover,#profileList >div.active{
+#messageList{
+  padding: 4px;
+}
+#profileList>a:hover,
+#profileList>a.active,
+#profileList>div:hover,
+#profileList>div.active {
   background-color: #F5F5F5;
   box-shadow: 0px 0px 5.3px -2px #00000040;
 }
+
 /* services */
-.services > div{
+.services>div {
   background-color: #FFECF1;
   color: #FF98B0;
   transition: all .4s;
 }
-.services > div:hover,.services > div.active{
+
+.services>div:hover,
+.services>div.active {
   background-color: #F7416D;
   color: white;
   box-shadow: 0px 7px 8.5px -7px #C48191;
 }
+
 /* bg */
-.bg-blur-1{
+.bg-blur-1 {
   backdrop-filter: blur(0px);
 }
-.bg-blur-2{
+
+.bg-blur-2 {
   backdrop-filter: blur(22px);
   background-color: #CADAFF4D;
 }
-.bg-gradient-1{
+
+.bg-gradient-1 {
   background: linear-gradient(90deg, #F7416D 0%, #E90A40 89%);
 }
+
 /* swiper */
 .swiper-pagination-bullet {
   width: 18px;
@@ -215,9 +407,11 @@ input[type="number"]::-webkit-outer-spin-button {
   transition: all .4s;
   opacity: 100% !important;
 }
+
 .swiper-pagination-bullet-active {
-   background-color: #f7416d !important;
+  background-color: #f7416d !important;
 }
+
 .banner2 .swiper-pagination-bullet {
   width: 4px;
   height: 4px;
@@ -226,15 +420,15 @@ input[type="number"]::-webkit-outer-spin-button {
   transition: all .4s;
   opacity: 100% !important;
 }
-.banner2 .swiper-pagination-bullet-active {
-   background-color: white !important;
-}
-@media (max-width: 1024px){
- .shadow-lg-2{
- }
-}
-@media (max-width: 768px){
-}
-@media (max-width: 640px){
 
+.banner2 .swiper-pagination-bullet-active {
+  background-color: white !important;
 }
+
+@media (max-width: 1024px) {
+  .shadow-lg-2 {}
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 640px) {}

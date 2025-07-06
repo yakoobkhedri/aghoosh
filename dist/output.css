@@ -626,12 +626,20 @@ video {
   bottom: 0px;
 }
 
+.bottom-14 {
+  bottom: 3.5rem;
+}
+
 .bottom-2 {
   bottom: 0.5rem;
 }
 
 .bottom-24 {
   bottom: 6rem;
+}
+
+.bottom-7 {
+  bottom: 1.75rem;
 }
 
 .bottom-9 {
@@ -674,18 +682,6 @@ video {
   top: 50px;
 }
 
-.bottom-7 {
-  bottom: 1.75rem;
-}
-
-.bottom-16 {
-  bottom: 4rem;
-}
-
-.bottom-14 {
-  bottom: 3.5rem;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -720,6 +716,11 @@ video {
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .-mt-\[190px\] {
@@ -778,10 +779,6 @@ video {
   margin-bottom: 14px;
 }
 
-.mb-\[18px\] {
-  margin-bottom: 18px;
-}
-
 .mr-12 {
   margin-right: 3rem;
 }
@@ -838,12 +835,12 @@ video {
   margin-top: 135px;
 }
 
-.mt-\[150px\] {
-  margin-top: 150px;
-}
-
 .mt-\[18px\] {
   margin-top: 18px;
+}
+
+.mt-\[60px\] {
+  margin-top: 60px;
 }
 
 .mt-\[69px\] {
@@ -860,14 +857,6 @@ video {
 
 .mt-\[88px\] {
   margin-top: 88px;
-}
-
-.mt-\[90px\] {
-  margin-top: 90px;
-}
-
-.mt-\[60px\] {
-  margin-top: 60px;
 }
 
 .block {
@@ -1034,12 +1023,12 @@ video {
   max-width: 300px;
 }
 
-.max-w-\[390px\] {
-  max-width: 390px;
-}
-
 .max-w-\[340px\] {
   max-width: 340px;
+}
+
+.max-w-\[390px\] {
+  max-width: 390px;
 }
 
 .flex-shrink-0 {
@@ -1060,6 +1049,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scale-50 {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1076,6 +1071,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
 }
 
 .resize {
@@ -1166,6 +1165,10 @@ video {
 
 .gap-\[22px\] {
   gap: 22px;
+}
+
+.gap-1\.5 {
+  gap: 0.375rem;
 }
 
 .gap-x-4 {
@@ -1351,6 +1354,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FF6D90\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 109 144 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1429,11 +1437,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1454,6 +1457,14 @@ video {
   padding-bottom: 7px;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -1470,10 +1481,6 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.pb-\[103px\] {
-  padding-bottom: 103px;
-}
-
 .pb-\[212px\] {
   padding-bottom: 212px;
 }
@@ -1484,6 +1491,14 @@ video {
 
 .pl-0 {
   padding-left: 0px;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
+}
+
+.pt-1\.5 {
+  padding-top: 0.375rem;
 }
 
 .pt-3 {
@@ -1500,26 +1515,6 @@ video {
 
 .pt-9 {
   padding-top: 2.25rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
-}
-
-.pt-1 {
-  padding-top: 0.25rem;
-}
-
-.pt-1\.5 {
-  padding-top: 0.375rem;
-}
-
-.pb-\[83px\] {
-  padding-bottom: 83px;
-}
-
-.pb-12 {
-  padding-bottom: 3rem;
 }
 
 .text-left {
@@ -1725,6 +1720,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 /* IranYekanFaNum */
 
 @font-face {
@@ -1801,7 +1800,7 @@ video {
 
 /*  */
 
-.font-normal{
+.font-normal {
   font-weight: 400;
 }
 
@@ -1809,7 +1808,7 @@ video {
   font-family: IranYekanFaNum-Regular;
 }
 
-.font-medium{
+.font-medium {
   font-weight: 500;
 }
 
@@ -1817,7 +1816,7 @@ video {
   font-family: IranYekanFaNum-Medium;
 }
 
-.font-semibold{
+.font-semibold {
   font-weight: 600;
 }
 
@@ -1825,7 +1824,7 @@ video {
   font-family: IranYekanFaNum-SemiBold;
 }
 
-.font-bold{
+.font-bold {
   font-weight: 700;
 }
 
@@ -1833,7 +1832,7 @@ video {
   font-family: IranYekanFaNum-Bold;
 }
 
-.font-extrabold{
+.font-extrabold {
   font-weight: 800;
 }
 
@@ -1841,7 +1840,7 @@ video {
   font-family: IranYekanFaNum-ExtraBold;
 }
 
-.font-black{
+.font-black {
   font-weight: 900;
 }
 
@@ -1849,7 +1848,7 @@ video {
   font-family: IranYekanFaNum-Black;
 }
 
-.font-extrablack{
+.font-extrablack {
   font-weight: 950;
 }
 
@@ -1862,7 +1861,7 @@ html {
 }
 
 body {
-  font-family: IranYekanFaNum-Regular!important;
+  font-family: IranYekanFaNum-Regular !important;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -1928,89 +1927,245 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* shadow */
 
-.shadow-1{
+.shadow-1 {
   box-shadow: 0px 8px 100px 0px #000000;
 }
 
-.shadow-2{
+.shadow-2 {
   box-shadow: 0px 0px 5.3px -2px #00000040;
 }
 
-.shadow-3{
+.shadow-3 {
   box-shadow: 0px 7px 8.5px -7px #C48191;
 }
 
 /* profile */
 
-#profile,#wallet,#message,#requestHistory{
+#profile,
+#wallet,
+#message,
+#requestHistory {
   opacity: 0;
   visibility: hidden;
   top: 40px;
 }
 
-#cancelRequest,#cancelRequest > div,#pay,#pay > div,#searching,#searchingFail{
+#cancelRequest,
+#cancelRequest>div,
+#pay,
+#pay>div,
+#searching,
+#searchingFail {
   opacity: 0;
   visibility: hidden;
   transition: all .4s;
 }
 
-#cancelRequest > div,#pay > div{
+#cancelRequest>div,
+#pay>div {
   margin-top: -50px;
   transition: all .8s;
 }
 
-#searching > div,#searchingFail > div{
+#searching>div,
+#searchingFail>div {
   bottom: -50px;
   transition: all .8s;
   position: relative;
 }
 
-#searching.active > div,#searchingFail.active > div{
+#searching.active>div,
+#searchingFail.active>div {
   bottom: 0px;
   opacity: 100%;
   visibility: visible;
 }
 
-#cancelRequest > div.active,#pay > div.active{
+#cancelRequest>div.active,
+#pay>div.active {
   margin-top: 0;
   opacity: 100%;
   visibility: visible;
 }
 
-#cancelRequest.active,#pay.active,#searching.active,#searchingFail.active{
+#cancelRequest.active,
+#pay.active,
+#searching.active,
+#searchingFail.active {
   opacity: 100%;
   visibility: visible;
 }
 
-#profile.active,#wallet.active,#message.active,#requestHistory.active{
+#profile.active,
+#wallet.active,
+#message.active,
+#requestHistory.active {
   top: 0;
   opacity: 100%;
   visibility: visible;
 }
 
-#profileList a,#profile,#wallet,#message,#messageList>a,#requestHistory,#cancelRequest,#pay{
+#profileList a,
+#profile,
+#wallet,
+#message,
+#messageList>a,
+#requestHistory,
+#cancelRequest,
+#pay {
   transition: all .4s;
 }
 
-#messageList > a:hover,#messageList > a.active{
+.condition-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("../src/img/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: left 0.5rem center;
+  background-size: 1.5rem;
+  padding-right: 12px;
+}
+
+/* استایل جدید برای مخفی کردن محتوای dropdown در ابتدا */
+
+.dropdownContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  opacity: 0;
+}
+
+.dropdownContent.show {
+  max-height: 2000px;
+  /* مقداری بیشتر از حداکثر ارتفاع ممکن */
+  opacity: 1;
+  transition: max-height 0.5s ease-in, opacity 0.3s ease 0.1s;
+}
+
+.dropdownBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.dropdownBtn.active svg {
+  transform: rotate(180deg);
+}
+
+/* استایل جدید برای چک‌باکس‌ها */
+
+.checkbox input[type="checkbox"] {
+  flex-shrink: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #189FF2;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.checkbox input[type="checkbox"]:checked {
+  background-color: #189FF2;
+  border-color: #189FF2;
+}
+
+.checkbox input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 2px rgba(24, 159, 242, 0.3);
+}
+
+/* chat */
+
+.voice-icon, .send-icon {
+  transition: all 0.3s ease;
+  pointer-events: auto;
+}
+
+.send-icon {
+  position: absolute;
+  right: 14px;
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+.voice-icon {
+  position: relative;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.has-text .voice-icon {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+.has-text .send-icon {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.message-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* inputbox */
+
+.inputbox{
+  transition: all .4s;
+}
+
+.inputbox.active{
+  border-top: 1.5px solid #189FF2;
+  box-shadow: 0 0 0 4px #189FF21C;
+}
+
+/*  */
+
+#messageList>a:hover,
+#messageList>a.active {
   border: 1px solid #FFECF1;
   box-shadow: 0px 7px 8.5px -7px #C48191;
 }
 
-#profileList >a:hover,#profileList >a.active,#profileList >div:hover,#profileList >div.active{
+#messageList{
+  padding: 4px;
+}
+
+#profileList>a:hover,
+#profileList>a.active,
+#profileList>div:hover,
+#profileList>div.active {
   background-color: #F5F5F5;
   box-shadow: 0px 0px 5.3px -2px #00000040;
 }
 
 /* services */
 
-.services > div{
+.services>div {
   background-color: #FFECF1;
   color: #FF98B0;
   transition: all .4s;
 }
 
-.services > div:hover,.services > div.active{
+.services>div:hover,
+.services>div.active {
   background-color: #F7416D;
   color: white;
   box-shadow: 0px 7px 8.5px -7px #C48191;
@@ -2018,18 +2173,18 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* bg */
 
-.bg-blur-1{
+.bg-blur-1 {
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
 }
 
-.bg-blur-2{
+.bg-blur-2 {
   -webkit-backdrop-filter: blur(22px);
           backdrop-filter: blur(22px);
   background-color: #CADAFF4D;
 }
 
-.bg-gradient-1{
+.bg-gradient-1 {
   background: linear-gradient(90deg, #F7416D 0%, #E90A40 89%);
 }
 
@@ -2061,15 +2216,15 @@ input[type="number"]::-webkit-outer-spin-button {
   background-color: white !important;
 }
 
-@media (max-width: 1024px){
-  .shadow-lg-2{
+@media (max-width: 1024px) {
+  .shadow-lg-2 {
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
 }
 
 .before\:absolute::before {
@@ -2135,10 +2290,6 @@ input[type="number"]::-webkit-outer-spin-button {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.first\:mt-0:first-child {
-  margin-top: 0px;
 }
 
 .last\:mb-0:last-child {

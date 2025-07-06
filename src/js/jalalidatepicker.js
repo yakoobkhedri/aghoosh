@@ -1,0 +1,3 @@
+// datapicker
+
+jalaliDatepicker.startWatch();
