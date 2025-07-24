@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const resendButton = document.getElementById('resendButton');
     const termsCheckbox = document.getElementById('termsCheckbox');
     const loginButton = document.getElementById('loginButton');
+     // ریست کردن چک‌باکس هنگام لود صفحه
+    termsCheckbox.checked = false;
     
     // تابع تبدیل اعداد فارسی و عربی به انگلیسی
     function convertPersianNumbersToEnglish(input) {
