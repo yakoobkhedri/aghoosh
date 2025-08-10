@@ -5,13 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link href="../../dist/output.css" rel="stylesheet">
-  <title>مادر یار 2</title>
+  <link href="../../../dist/output.css" rel="stylesheet">
+  <title>مادر یار 4</title>
 </head>
 
 <body>
 
-   <!-- profile -->
+   <!-- searching -->
+   <div id="searching" class="fixed inset-0 flex items-end w-full h-full max-w-[390px] mx-auto bg-blur-2 z-30">
+     <div id="box" class="bg-white rounded-t-[21px] shadow-2 w-full p-[53px]">
+      <img alt="img" src="../../img/Double Ring@1x-1.9s-236px-236px 2.png" class="mx-auto animate-spin">
+      <p class="mt-4 text-xl font-bold text-center text-info">داریم برات خدمتیار پیدا می‌کنیم...</p>
+    </div>
+   </div>
+
+      <!-- searchingFail -->
+   <div id="searchingFail" class="fixed inset-0 flex items-end w-full h-full max-w-[390px] mx-auto bg-blur-2 z-30">
+     <div id="box" class="bg-white rounded-t-[21px] shadow-2 w-full px-6 py-[53px]">
+      <p class="mt-4 text-xl font-bold text-center text-info">فعلاً خدمتیار مناسبی پیدا نکردیم.</p>
+      <p class="text-sm font-bold text-info mt-5">
+         اگه امکانش هست، زمان یا شرایط رو یه کم تغییر بده و دوباره امتحان کن. شاید این‌بار یکی از همراه‌های خوبمون برات آزاد باشه
+      </p>
+      <a id="openSearching2" class="mt-[69px] rounded-[100px] bg-primary text-white flex-center h-8 text-lg font-bold">
+        جستجوی مجدد
+      </a>
+    </div>
+   </div>
+
+       <!-- profile -->
   <div id="profile" class="bg-white w-full max-w-[390px] mx-auto fixed inset-0 h-full z-30 p-4">
     <svg id="closeProfile" class="cursor-pointer mr-auto" width="16" height="17" viewBox="0 0 16 17" fill="none"
       xmlns="http://www.w3.org/2000/svg">
@@ -21,7 +42,7 @@
     </svg>
     <div class="mt-8" id="profileList">
       <div class="rounded-[21px] p-3 flex items-center gap-3 active mb-2">
-        <img alt="img" src="../img/Ellipse 122.png" class="w-11 h-11 rounded-full">
+        <img alt="img" src="../../img/Ellipse 122.png" class="w-11 h-11 rounded-full">
         <div>
           <p class="text-sm text-secondary">مریم محمدی</p>
           <p class="text-sm text-[#2B3F6C] mt-1">09356789320</p>
@@ -159,7 +180,7 @@
             <p class="text-sm text-primary">احمد موحدی </p>
             <p class="mt-1 text-xs text-[#A3A3A3]">بله حتما میام </p>
           </div>
-          <img alt="img" src="../img/Ellipse 95.png" class="rounded-full w-9 h-9">
+          <img alt="img" src="../../img/Ellipse 95.png" class="rounded-full w-9 h-9">
         </div>
       </a>
       <a class="rounded-[14px] border border-transparent p-2 flex items-center justify-between gap-2 shadow-2 mb-4">
@@ -172,7 +193,7 @@
             <p class="text-sm text-primary">احمد موحدی </p>
             <p class="mt-1 text-xs text-[#A3A3A3]">بله حتما میام </p>
           </div>
-          <img alt="img" src="../img/Ellipse 95.png" class="rounded-full w-9 h-9">
+          <img alt="img" src="../../img/Ellipse 95.png" class="rounded-full w-9 h-9">
         </div>
       </a>
       <a class="rounded-[14px] border border-transparent p-2 flex items-center justify-between gap-2 shadow-2 mb-4">
@@ -185,7 +206,7 @@
             <p class="text-sm text-primary">احمد موحدی </p>
             <p class="mt-1 text-xs text-[#A3A3A3]">بله حتما میام </p>
           </div>
-          <img alt="img" src="../img/Ellipse 95.png" class="rounded-full w-9 h-9">
+          <img alt="img" src="../../img/Ellipse 95.png" class="rounded-full w-9 h-9">
         </div>
       </a>
       <a class="rounded-[14px] border border-transparent p-2 flex items-center justify-between gap-2 shadow-2 mb-4">
@@ -198,7 +219,7 @@
             <p class="text-sm text-primary">احمد موحدی </p>
             <p class="mt-1 text-xs text-[#A3A3A3]">بله حتما میام </p>
           </div>
-          <img alt="img" src="../img/Ellipse 95.png" class="rounded-full w-9 h-9">
+          <img alt="img" src="../../img/Ellipse 95.png" class="rounded-full w-9 h-9">
         </div>
       </a>
     </div>
@@ -257,7 +278,7 @@
     </form>
     <div class="mt-6 overflow-auto h-[80vh]" id="requestList">
       <a class="rounded-[21px] p-3 shadow-2 mb-[14px] flex items-start gap-2 m-1">
-        <img alt="img" src="../img/Ellipse 95.png" class="rounded-full w-9 h-9">
+        <img alt="img" src="../../img/Ellipse 95.png" class="rounded-full w-9 h-9">
         <div class="mt-1.5">
           <div class="flex items-center justify-between gap-2">
             <p class="text-secondary text-sm">احمد موحدی </p>
@@ -273,7 +294,7 @@
         </div>
       </a>
       <a class="rounded-[21px] p-3 shadow-2 mb-[14px] flex items-start gap-2 m-1">
-        <img alt="img" src="../img/Ellipse 95.png" class="rounded-full w-9 h-9">
+        <img alt="img" src="../../img/Ellipse 95.png" class="rounded-full w-9 h-9">
         <div class="mt-1.5">
           <div class="flex items-center justify-between gap-2">
             <p class="text-secondary text-sm">احمد موحدی </p>
@@ -339,243 +360,56 @@
 
       <section class="mt-[18px] mb-24">
         <form>
-          <p class="text-xs text-[#5A74B0]">لطفا با دقت مشخصات خدمتیار رو انتخاب کنید </p>
-          <div class="mt-3 shadow-2 rounded-[21px] p-[22px] mb-4">
-            <div class="cursor-pointer dropdownBtn flex items-center justify-between gap-2">
-              <p class="text-sm font-bold text-[#5A74B0]">خدمتیار</p>
-              <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12 16.7999C11.3 16.7999 10.6 16.5299 10.07 15.9999L3.55002 9.47989C3.26002 9.18989 3.26002 8.70989 3.55002 8.41989C3.84002 8.12989 4.32002 8.12989 4.61002 8.41989L11.13 14.9399C11.61 15.4199 12.39 15.4199 12.87 14.9399L19.39 8.41989C19.68 8.12989 20.16 8.12989 20.45 8.41989C20.74 8.70989 20.74 9.18989 20.45 9.47989L13.93 15.9999C13.4 16.5299 12.7 16.7999 12 16.7999Z"
-                  fill="#5A74B0" />
-                <script xmlns="" />
-              </svg>
-            </div>
-            <div class="checkbox dropdownContent">
-              <p class="mt-4 text-secondary text-sm font-bold">جنسیت خدمتیار </p>
-              <div class="flex items-center mt-2 gap-9 mb-7">
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="nozad" class="cursor-pointer">
-                  <p class="text-xs text-[#2B3F6C]">مرد</p>
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="radio" name="nozad" class="cursor-pointer">
-                  <p class="text-xs text-[#2B3F6C]">زن</p>
-                </label>
+          <a  href="madaryar3.html">
+            <svg class="mr-auto" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.56994 18.8201C9.37994 18.8201 9.18994 18.7501 9.03994 18.6001L2.96994 12.5301C2.67994 12.2401 2.67994 11.7601 2.96994 11.4701L9.03994 5.40012C9.32994 5.11012 9.80994 5.11012 10.0999 5.40012C10.3899 5.69012 10.3899 6.17012 10.0999 6.46012L4.55994 12.0001L10.0999 17.5401C10.3899 17.8301 10.3899 18.3101 10.0999 18.6001C9.95994 18.7501 9.75994 18.8201 9.56994 18.8201Z"
+                fill="#5A74B0" />
+              <path
+                d="M20.5 12.75H3.67004C3.26004 12.75 2.92004 12.41 2.92004 12C2.92004 11.59 3.26004 11.25 3.67004 11.25H20.5C20.91 11.25 21.25 11.59 21.25 12C21.25 12.41 20.91 12.75 20.5 12.75Z"
+                fill="#5A74B0" />
+              <script xmlns="" />
+            </svg>
+          </a>
+          <div class="mt-2">
+            <div class="rounded-[21px] shadow-2 p-3">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <p class="text-secondary text-sm font-bold">نیازها :</p>
+                <a href="madaryar3.html">
+                  <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.23248 21.96C5.54623 21.96 4.90498 21.7237 4.44373 21.285C3.85873 20.7337 3.57748 19.9012 3.67873 19.0012L4.09498 15.3562C4.17373 14.67 4.58999 13.7587 5.07374 13.2637L14.31 3.48749C16.6162 1.04624 19.0237 0.978744 21.465 3.28499C23.9062 5.59124 23.9737 7.99874 21.6675 10.44L12.4312 20.2162C11.9587 20.7225 11.0812 21.195 10.395 21.3075L6.77248 21.9262C6.58123 21.9375 6.41248 21.96 6.23248 21.96ZM17.9212 3.27374C17.055 3.27374 16.3012 3.81374 15.5362 4.62374L6.29998 14.4112C6.07498 14.6475 5.81624 15.21 5.77123 15.5362L5.35499 19.1812C5.30999 19.5525 5.39998 19.8562 5.60248 20.0475C5.80498 20.2387 6.10873 20.3062 6.47998 20.25L10.1025 19.6312C10.4287 19.575 10.9687 19.2825 11.1937 19.0462L20.43 9.26999C21.825 7.78499 22.3312 6.41249 20.295 4.49999C19.395 3.63374 18.6187 3.27374 17.9212 3.27374Z" fill="#5A74B0"/>
+<path d="M19.5075 12.3187C19.485 12.3187 19.4513 12.3187 19.4288 12.3187C15.9188 11.97 13.095 9.3037 12.555 5.8162C12.4875 5.35495 12.8025 4.92745 13.2638 4.8487C13.725 4.7812 14.1525 5.0962 14.2313 5.55745C14.6588 8.27995 16.8638 10.3725 19.6088 10.6425C20.07 10.6875 20.4075 11.1037 20.3625 11.565C20.3063 11.9925 19.935 12.3187 19.5075 12.3187Z" fill="#5A74B0"/>
+<path d="M23.625 25.5938H3.375C2.91375 25.5938 2.53125 25.2112 2.53125 24.75C2.53125 24.2887 2.91375 23.9062 3.375 23.9062H23.625C24.0863 23.9062 24.4688 24.2887 24.4688 24.75C24.4688 25.2112 24.0863 25.5938 23.625 25.5938Z" fill="#5A74B0"/>
+<script xmlns=""/></svg>
+                </a>
               </div>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار شبانه روزی </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار کمک درسی </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار مسلط به زبان انگلیسی</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار مسلط به زبان فرانسوی</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار مسلط به تزریقات </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار گفتار درمان </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار برای مراقبت در بیمارستان </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار همراه کودک (رفت‌و‌برگشت از مهد و مراقبت تا حضور والدین)</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>خدمتیار برای امور بیرون از خانه (مراقبت از کودک و جابه جایی در مراکز خرید -مطب دکتر و... )</p>
-              </label>
-
+              <p class="text-sm text-secondary mb-2">1 آذر یکشنبه  -12 شب تا 5 صبح </p>
+              <p class="text-xs text-secondary mb-2">خدمتیار خانم برای خانم بعد از زایمان  <span class="text-[#FF8000]">* نیاز به مصرف داروی خاص</span> </p>
+              <p class="text-xs text-[#5A74B0] leading-[18px]">
+                کمک در نشستن، برخاستن و کاهش دردهای جسمی<br>
+یادآوری داروها و ویتامین‌ها طبق تجویز پزشک<br>
+تنظیم محیط و وضعیت مناسب خواب
+              </p>
             </div>
+            <textarea class="border rounded-xl py-3 px-4 mt-6 text-xs w-full outline-none min-h-[42px] h-full" placeholder="سایر توضیحات (فیلد متنی اضافی) "></textarea>
           </div>
-          <div class="shadow-2 rounded-[21px] p-[22px] mb-4">
-            <div class="cursor-pointer dropdownBtn flex items-center justify-between gap-2">
-              <p class="text-sm font-bold text-[#5A74B0]">نوزاد</p>
-              <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12 16.7999C11.3 16.7999 10.6 16.5299 10.07 15.9999L3.55002 9.47989C3.26002 9.18989 3.26002 8.70989 3.55002 8.41989C3.84002 8.12989 4.32002 8.12989 4.61002 8.41989L11.13 14.9399C11.61 15.4199 12.39 15.4199 12.87 14.9399L19.39 8.41989C19.68 8.12989 20.16 8.12989 20.45 8.41989C20.74 8.70989 20.74 9.18989 20.45 9.47989L13.93 15.9999C13.4 16.5299 12.7 16.7999 12 16.7999Z"
-                  fill="#5A74B0" />
-                <script xmlns="" />
-              </svg>
-            </div>
-            <div class="checkbox dropdownContent">
-              <label class="mt-4 flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>تغذیه نوزاد (شیر مادر/شیر خشک)</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>
-                  تعویض پوشک + استحمام نوزاد + کوتاهی ناخن _تمیز کردن بند ناف
-                </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>تعامل و ارتباط برای تقویت هوش عاطفی (تقویت خلاقیت )</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>ماساژ و حرکات نرم برای تقویت عضلات</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>مراقبت از نوزاد درگیر کولیکی ، رفلاکس ،علائم تب ،زردی، بی قرار </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>همراهی در مراجعه به پزشک یا واکسیناسیون</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>همراهی و مراقبت از کودک در مراسمات (مراقبت کامل از نوزاد در مراسم : شیردهی، تعویض پوشک و خواباندن
-                  نوزاد
-                  است )</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>آموزش خواب مستقل _ استفاده از توالت مستقل </p>
-              </label>
-            </div>
-          </div>
-          <div class="shadow-2 rounded-[21px] p-[22px] mb-4">
-            <div class="cursor-pointer dropdownBtn flex items-center justify-between gap-2">
-              <p class="text-sm font-bold text-[#5A74B0]">خدمتیار کودک</p>
-              <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12 16.7999C11.3 16.7999 10.6 16.5299 10.07 15.9999L3.55002 9.47989C3.26002 9.18989 3.26002 8.70989 3.55002 8.41989C3.84002 8.12989 4.32002 8.12989 4.61002 8.41989L11.13 14.9399C11.61 15.4199 12.39 15.4199 12.87 14.9399L19.39 8.41989C19.68 8.12989 20.16 8.12989 20.45 8.41989C20.74 8.70989 20.74 9.18989 20.45 9.47989L13.93 15.9999C13.4 16.5299 12.7 16.7999 12 16.7999Z"
-                  fill="#5A74B0" />
-                <script xmlns="" />
-              </svg>
-            </div>
-            <div class="checkbox dropdownContent">
-              <label class="mt-4 flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>تغذیه نوزاد (شیر مادر/شیر خشک)</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>
-                  تعویض پوشک + استحمام نوزاد + کوتاهی ناخن _تمیز کردن بند ناف
-                </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>تعامل و ارتباط برای تقویت هوش عاطفی (تقویت خلاقیت )</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>ماساژ و حرکات نرم برای تقویت عضلات</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>مراقبت از نوزاد درگیر کولیکی ، رفلاکس ،علائم تب ،زردی، بی قرار </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>همراهی در مراجعه به پزشک یا واکسیناسیون</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>همراهی و مراقبت از کودک در مراسمات (مراقبت کامل از نوزاد در مراسم : شیردهی، تعویض پوشک و خواباندن
-                  نوزاد
-                  است )</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>آموزش خواب مستقل _ استفاده از توالت مستقل </p>
-              </label>
-            </div>
-          </div>
-          <div class="shadow-2 rounded-[21px] p-[22px] mb-4">
-            <div class="cursor-pointer dropdownBtn flex items-center justify-between gap-2">
-              <p class="text-sm font-bold text-[#5A74B0]">خدمتیار امور منزل</p>
-              <svg class="flex-shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12 16.7999C11.3 16.7999 10.6 16.5299 10.07 15.9999L3.55002 9.47989C3.26002 9.18989 3.26002 8.70989 3.55002 8.41989C3.84002 8.12989 4.32002 8.12989 4.61002 8.41989L11.13 14.9399C11.61 15.4199 12.39 15.4199 12.87 14.9399L19.39 8.41989C19.68 8.12989 20.16 8.12989 20.45 8.41989C20.74 8.70989 20.74 9.18989 20.45 9.47989L13.93 15.9999C13.4 16.5299 12.7 16.7999 12 16.7999Z"
-                  fill="#5A74B0" />
-                <script xmlns="" />
-              </svg>
-            </div>
-            <div class="checkbox dropdownContent">
-              <label class="mt-4 flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>تغذیه نوزاد (شیر مادر/شیر خشک)</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>
-                  تعویض پوشک + استحمام نوزاد + کوتاهی ناخن _تمیز کردن بند ناف
-                </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>تعامل و ارتباط برای تقویت هوش عاطفی (تقویت خلاقیت )</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>ماساژ و حرکات نرم برای تقویت عضلات</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>مراقبت از نوزاد درگیر کولیکی ، رفلاکس ،علائم تب ،زردی، بی قرار </p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>همراهی در مراجعه به پزشک یا واکسیناسیون</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>همراهی و مراقبت از کودک در مراسمات (مراقبت کامل از نوزاد در مراسم : شیردهی، تعویض پوشک و خواباندن
-                  نوزاد
-                  است )</p>
-              </label>
-              <label class="flex items-center gap-3 text-xs text-[#41588E] cursor-pointer mb-7 last:mb-0">
-                <input type="checkbox" class="cursor-pointer">
-                <p>آموزش خواب مستقل _ استفاده از توالت مستقل </p>
-              </label>
-            </div>
-          </div>
-          <a href="madaryar3.html"
-            class="mt-[60px] text-lg font-bold text-white flex-center rounded-[100px] bg-primary w-[160px] h-10 mr-auto">ادامه</a>
+          <a id="openSearching"
+            class="fixed max-w-[340px] bottom-7 inset-x-8 mt-[75px] font-bold text-white flex-center rounded-[100px] bg-primary w-full h-10 mx-auto">ادامه و ثبت نهایی</a>
+            <a id="openSearchingFail"
+            class="fixed max-w-[340px] bottom-7 inset-x-8 mt-[75px] font-bold text-white hidden justify-center items-center rounded-[100px] bg-primary w-full h-10 mx-auto">پیدا نشدن خدمتیار</a>
         </form>
       </section>
 
     </main>
 
-     <footer
-            class="fixed z-10 bottom-0 inset-x-0 w-full max-w-[390px] mx-auto">
-            <a class="bg-warning w-14 h-14 rounded-full flex-center absolute left-4 bottom-24">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 30.3333C15.0667 30.3333 14.12 29.9733 13.4133 29.2666L11.1333 27.0133C10.5733 26.4533 9.80001 26.1466 9.01335 26.1466H8C5.24 26.1466 3 23.9199 3 21.1866V6.63989C3 3.90656 5.24 1.67993 8 1.67993H24C26.76 1.67993 29 3.90656 29 6.63989V21.1866C29 23.9199 26.76 26.1466 24 26.1466H22.9867C22.2 26.1466 21.4267 26.4666 20.8667 27.0133L18.5867 29.2666C17.88 29.9733 16.9333 30.3333 16 30.3333ZM8 3.66659C6.34667 3.66659 5 4.99988 5 6.62655V21.1733C5 22.8133 6.34667 24.1332 8 24.1332H9.01335C10.3333 24.1332 11.6133 24.6666 12.5466 25.5866L14.8267 27.8399C15.48 28.4799 16.5334 28.4799 17.1867 27.8399L19.4666 25.5866C20.4 24.6666 21.68 24.1332 23 24.1332H24C25.6533 24.1332 27 22.7999 27 21.1733V6.62655C27 4.98655 25.6533 3.66659 24 3.66659H8Z" fill="white"/>
-<path d="M15.9999 14.3334C13.7333 14.3334 11.8932 12.4934 11.8932 10.2267C11.8932 7.96006 13.7333 6.12012 15.9999 6.12012C18.2666 6.12012 20.1066 7.96006 20.1066 10.2267C20.1066 12.4934 18.2666 14.3334 15.9999 14.3334ZM15.9999 8.12012C14.8399 8.12012 13.8932 9.06673 13.8932 10.2267C13.8932 11.3867 14.8399 12.3334 15.9999 12.3334C17.1599 12.3334 18.1066 11.3867 18.1066 10.2267C18.1066 9.06673 17.1599 8.12012 15.9999 8.12012Z" fill="white"/>
-<path d="M21.3333 21.88C20.7867 21.88 20.3333 21.4267 20.3333 20.88C20.3333 19.04 18.3867 17.5334 16 17.5334C13.6133 17.5334 11.6667 19.04 11.6667 20.88C11.6667 21.4267 11.2133 21.88 10.6667 21.88C10.12 21.88 9.66667 21.4267 9.66667 20.88C9.66667 17.9334 12.5067 15.5334 16 15.5334C19.4933 15.5334 22.3333 17.9334 22.3333 20.88C22.3333 21.4267 21.88 21.88 21.3333 21.88Z" fill="white"/>
-</svg>
-            </a>
-        </footer>
 
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="../js/header.js"></script>
-  <script src="../js/madaryar2.js"></script>
-  <script src="../js/script.js"></script>
+  <script src="../../js/header.js"></script>
+  <script src="../../js/search.js"></script>
+  <script src="../../js/script.js"></script>
 </body>
 
 </html>
