@@ -184,6 +184,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* profile */
 #profile,
 #changecart,
+#myWithdrawal,
 #wallet,
 #message,
 #requestHistory {
@@ -194,6 +195,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 #cancelRequest,
 #cancelRequest>div,
+#withdrawal,
+#withdrawal>div,
 #pay,
 #pay>div,
 #searching,
@@ -204,6 +207,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #cancelRequest>div,
+#withdrawal>div,
 #pay>div {
   margin-top: -50px;
   transition: all .8s;
@@ -224,6 +228,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #cancelRequest>div.active,
+#withdrawal>div.active,
 #pay>div.active {
   margin-top: 0;
   opacity: 100%;
@@ -231,6 +236,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #cancelRequest.active,
+#withdrawal.active,
 #pay.active,
 #searching.active,
 #searchingFail.active {
@@ -240,6 +246,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 #profile.active,
 #changecart.active,
+#myWithdrawal.active,
 #wallet.active,
 #message.active,
 #requestHistory.active {
@@ -251,11 +258,13 @@ input[type="number"]::-webkit-outer-spin-button {
 #profileList a,
 #profile,
 #changecart,
+#myWithdrawal,
 #wallet,
 #message,
 #messageList>a,
 #requestHistory,
 #cancelRequest,
+#withdrawal,
 #pay {
   transition: all .4s;
 }
