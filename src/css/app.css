@@ -138,7 +138,14 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
   /* حذف margin پیش‌فرض */
 }
-
+.text-nowrap2{
+  text-wrap: nowrap;
+}
+.money .swiper-slide div.active{
+  border: 1px solid #F7416D;
+  box-shadow: 0px 3px 8px 0px #A20A2F3B;
+  color: #F7416D;
+}
 /* scroll */
 .noscroll {
   scrollbar-width: none;
@@ -186,6 +193,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 /* profile */
 #profile,
+#profileEdit,
 #changecart,
 #myWithdrawal,
 #wallet,
@@ -203,6 +211,7 @@ input[type="number"]::-webkit-outer-spin-button {
 #pay,
 #pay>div,
 #searching,
+#chargeWallet,
 #searchingFail {
   opacity: 0;
   visibility: hidden;
@@ -217,6 +226,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #searching>div,
+#chargeWallet>div,
 #searchingFail>div {
   bottom: -50px;
   transition: all .8s;
@@ -224,6 +234,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #searching.active>div,
+#chargeWallet.active>div,
 #searchingFail.active>div {
   bottom: 0px;
   opacity: 100%;
@@ -242,12 +253,14 @@ input[type="number"]::-webkit-outer-spin-button {
 #withdrawal.active,
 #pay.active,
 #searching.active,
+#chargeWallet.active,
 #searchingFail.active {
   opacity: 100%;
   visibility: visible;
 }
 
 #profile.active,
+#profileEdit.active,
 #changecart.active,
 #myWithdrawal.active,
 #wallet.active,
@@ -260,6 +273,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 #profileList a,
 #profile,
+#profileEdit,
 #changecart,
 #myWithdrawal,
 #wallet,

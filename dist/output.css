@@ -614,12 +614,24 @@ video {
   bottom: 190px !important;
 }
 
+.-right-\[14px\] {
+  right: -14px;
+}
+
 .-right-\[3px\] {
   right: -3px;
 }
 
+.-top-\[18px\] {
+  top: -18px;
+}
+
 .-top-\[2px\] {
   top: -2px;
+}
+
+.-top-\[42px\] {
+  top: -42px;
 }
 
 .bottom-0 {
@@ -666,6 +678,10 @@ video {
   left: 1.25rem;
 }
 
+.left-6 {
+  left: 1.5rem;
+}
+
 .left-9 {
   left: 2.25rem;
 }
@@ -694,20 +710,12 @@ video {
   top: 0px;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .top-\[50px\] {
   top: 50px;
-}
-
-.-top-\[62px\] {
-  top: -62px;
-}
-
-.-right-\[14px\] {
-  right: -14px;
-}
-
-.-top-\[42px\] {
-  top: -42px;
 }
 
 .z-10 {
@@ -964,6 +972,10 @@ video {
   margin-top: 53px;
 }
 
+.mt-\[58px\] {
+  margin-top: 58px;
+}
+
 .mt-\[60px\] {
   margin-top: 60px;
 }
@@ -982,6 +994,10 @@ video {
 
 .mt-\[88px\] {
   margin-top: 88px;
+}
+
+.mb-11 {
+  margin-bottom: 2.75rem;
 }
 
 .block {
@@ -1753,6 +1769,11 @@ video {
   background-color: rgb(247 65 109 / var(--tw-bg-opacity));
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 63 108 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1881,6 +1902,11 @@ video {
   padding-bottom: 0.375rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1903,6 +1929,10 @@ video {
 
 .pb-1 {
   padding-bottom: 0.25rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pb-12 {
@@ -1987,6 +2017,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pt-7 {
+  padding-top: 1.75rem;
 }
 
 .pt-9 {
@@ -2436,6 +2470,16 @@ input[type="number"]::-webkit-outer-spin-button {
   /* حذف margin پیش‌فرض */
 }
 
+.text-nowrap2{
+  text-wrap: nowrap;
+}
+
+.money .swiper-slide div.active{
+  border: 1px solid #F7416D;
+  box-shadow: 0px 3px 8px 0px #A20A2F3B;
+  color: #F7416D;
+}
+
 /* scroll */
 
 .noscroll {
@@ -2495,6 +2539,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* profile */
 
 #profile,
+#profileEdit,
 #changecart,
 #myWithdrawal,
 #wallet,
@@ -2512,6 +2557,7 @@ input[type="number"]::-webkit-outer-spin-button {
 #pay,
 #pay>div,
 #searching,
+#chargeWallet,
 #searchingFail {
   opacity: 0;
   visibility: hidden;
@@ -2526,6 +2572,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #searching>div,
+#chargeWallet>div,
 #searchingFail>div {
   bottom: -50px;
   transition: all .8s;
@@ -2533,6 +2580,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 #searching.active>div,
+#chargeWallet.active>div,
 #searchingFail.active>div {
   bottom: 0px;
   opacity: 100%;
@@ -2551,12 +2599,14 @@ input[type="number"]::-webkit-outer-spin-button {
 #withdrawal.active,
 #pay.active,
 #searching.active,
+#chargeWallet.active,
 #searchingFail.active {
   opacity: 100%;
   visibility: visible;
 }
 
 #profile.active,
+#profileEdit.active,
 #changecart.active,
 #myWithdrawal.active,
 #wallet.active,
@@ -2569,6 +2619,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 #profileList a,
 #profile,
+#profileEdit,
 #changecart,
 #myWithdrawal,
 #wallet,
