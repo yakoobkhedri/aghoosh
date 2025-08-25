@@ -1260,6 +1260,10 @@ video {
   max-width: 300px;
 }
 
+.max-w-\[330px\] {
+  max-width: 330px;
+}
+
 .max-w-\[340px\] {
   max-width: 340px;
 }
@@ -2470,11 +2474,11 @@ input[type="number"]::-webkit-outer-spin-button {
   /* حذف margin پیش‌فرض */
 }
 
-.text-nowrap2{
+.text-nowrap2 {
   text-wrap: nowrap;
 }
 
-.money .swiper-slide div.active{
+.money .swiper-slide div.active {
   border: 1px solid #F7416D;
   box-shadow: 0px 3px 8px 0px #A20A2F3B;
   color: #F7416D;
@@ -2494,23 +2498,23 @@ input[type="number"]::-webkit-outer-spin-button {
   /* برای Chrome, Safari و Opera */
 }
 
-.steps.active::after{
+.steps.active::after {
   content: none;
 }
 
-.steps2.active{
+.steps2.active {
   color: #01950B;
 }
 
-.steps2.active div{
+.steps2.active div {
   background-color: #01950B;
 }
 
-.steps2.active div span.first{
+.steps2.active div span.first {
   display: none;
 }
 
-.steps2.active div span.last{
+.steps2.active div span.last {
   display: block;
 }
 
@@ -2528,12 +2532,26 @@ input[type="number"]::-webkit-outer-spin-button {
   box-shadow: 0px 7px 8.5px -7px #C48191;
 }
 
-.shadow-4{
+.shadow-4 {
   box-shadow: 0px 4px 4px 0px #0000001A;
 }
 
-.shadow-5{
+.shadow-5 {
   box-shadow: 0px 2px 8px 0px #00000029;
+}
+
+/* alert */
+
+.alert{
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.alert.active{
+  opacity: 100;
+  visibility: visible;
 }
 
 /* profile */
@@ -2718,6 +2736,78 @@ input[type="number"]::-webkit-outer-spin-button {
   box-shadow: 0 0 0 2px rgba(24, 159, 242, 0.3);
 }
 
+.title {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.checkbox-group {
+  gap: 15px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkbox-input {
+  flex-shrink: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cbd5e0;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  margin-top: 2px;
+}
+
+.checkbox-input:checked {
+  background-color: #189FF2;
+  border-color: #189FF2;
+}
+
+.checkbox-input:checked::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.checkbox-content {
+  flex-grow: 1;
+}
+
+.checkbox-label {
+  display: block;
+  font-weight: bold;
+  color: #2d3748;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.checkbox-description {
+  display: block;
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 /* chat */
 
 .voice-icon,
@@ -2788,9 +2878,23 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* hover */
 
-.hover1:hover{
+.hover1:hover {
   background-color: #f7416d;
   color: white;
+}
+
+.region>div.active,
+.clinik>div.active,
+.date>div.active,
+.hour>div.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 159 242 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.clinik>div.active svg path {
+  fill: white;
 }
 
 /* services */

@@ -27,10 +27,10 @@
           </p>
           <div class="mt-2">
             <p class="text-[#3D3D3D]">منطقه تان در شهر تهران را انتخاب کنید :</p>
-            <form class="mt-3 grid grid-cols-4 gap-x-4 gap-y-2">
+            <form class="mt-3 grid grid-cols-4 gap-x-4 gap-y-2 region">
               <div
-                class="relative bg-[#E0E0E0] rounded-[100px] transition hover:bg-info hover:text-white flex-center text-[#A3A3A3] text-xs h-8 cursor-pointer">
-                <input type="radio" name="region" class="absolute inset-0 w-full h-full cursor-pointer opacity-0">
+                class="active relative bg-[#E0E0E0] rounded-[100px] transition hover:bg-info hover:text-white flex-center text-[#A3A3A3] text-xs h-8 cursor-pointer">
+                <input checked type="radio" name="region" class="absolute inset-0 w-full h-full cursor-pointer opacity-0">
                 شمال
               </div>
               <div
@@ -72,8 +72,8 @@
           </div>
           <div class="mt-9">
             <p class="text-[#3D3D3D]">کلینیک های پیشنهادی :</p>
-            <form class="mt-2">
-              <div class="bg-[#E0E0E0] mb-2 transition hover:bg-info hover:text-white group relative rounded-lg text-[#A3A3A3] h-10 flex items-center justify-center gap-1 text-sm cursor-pointer">
+            <form class="mt-2 clinik">
+              <div class="active bg-[#E0E0E0] mb-2 transition hover:bg-info hover:text-white group relative rounded-lg text-[#A3A3A3] h-10 flex items-center justify-center gap-1 text-sm cursor-pointer">
                 <input type="checkbox" class="absolute w-full h-full inset-0 cursor-pointer opacity-0">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path class="transition group-hover:fill-white" d="M22 22.75H2C1.59 22.75 1.25 22.41 1.25 22C1.25 21.59 1.59 21.25 2 21.25H22C22.41 21.25 22.75 21.59 22.75 22C22.75 22.41 22.41 22.75 22 22.75Z" fill="#A3A3A3"/>
@@ -110,9 +110,9 @@
           </div>
            <div class="mt-8">
             <p class="text-[#3D3D3D]">انتخاب روز و ساعت : </p>
-            <form class="mt-3 grid grid-cols-3 gap-4">
+            <form class="mt-3 grid grid-cols-3 gap-4 date">
               <div
-                class="relative bg-[#E0E0E0] rounded-[100px] transition hover:bg-info hover:text-white flex-center text-[#A3A3A3] text-xs h-8 cursor-pointer">
+                class="relative active bg-[#E0E0E0] rounded-[100px] transition hover:bg-info hover:text-white flex-center text-[#A3A3A3] text-xs h-8 cursor-pointer">
                 <input type="radio" name="region" class="absolute inset-0 w-full h-full cursor-pointer opacity-0">
                 شنبه 28 خرداد
               </div>
@@ -142,9 +142,9 @@
                 سه شنبه 4 اسفند 
               </div>
             </form>
-             <form class="mt-9 grid grid-cols-4 gap-4">
+             <form class="mt-9 grid grid-cols-4 gap-4 hour">
               <div
-                class="relative border border-[#E0E0E0] rounded-[100px] transition hover:bg-info hover:text-white flex-center text-[#A3A3A3] text-sm h-8 cursor-pointer">
+                class="relative active border border-[#E0E0E0] rounded-[100px] transition hover:bg-info hover:text-white flex-center text-[#A3A3A3] text-sm h-8 cursor-pointer">
                 <input type="radio" name="hour" class="absolute inset-0 w-full h-full cursor-pointer opacity-0">
                 14:30
               </div>
@@ -175,6 +175,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../../js/script.js"></script>
+  <script src="../../js/daryaftNobat.js"></script>
 </body>
 
 </html>
